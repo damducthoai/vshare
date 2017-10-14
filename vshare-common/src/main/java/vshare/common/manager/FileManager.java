@@ -25,7 +25,8 @@ public interface FileManager {
      *
      * @param userId
      * @param folderId
+     * @param newName
      * @return
      */
-    boolean renameFolder(long userId, long folderId);
+    boolean renameFolder(long userId, long folderId, String newName);
 }

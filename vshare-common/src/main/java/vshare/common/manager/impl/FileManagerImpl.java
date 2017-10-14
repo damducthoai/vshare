@@ -16,7 +16,7 @@ public class FileManagerImpl implements FileManager {
     }
 
     @Override
-    public boolean renameFolder(long userId, long folderId) {
+    public boolean renameFolder(long userId, long folderId, String newName) {
         // TODO
         return false;
     }
