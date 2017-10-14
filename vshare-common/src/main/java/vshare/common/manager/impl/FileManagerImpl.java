@@ -1,6 +1,10 @@
 package vshare.common.manager.impl;
 
+import vshare.common.entity.FileEntity;
+import vshare.common.entity.FolderEntity;
 import vshare.common.manager.FileManager;
+
+import java.util.List;
 
 public class FileManagerImpl implements FileManager {
     @Override
@@ -37,5 +41,29 @@ public class FileManagerImpl implements FileManager {
     public boolean renameFile(long userId, long fileName, long fileId) {
         // TODO
         return false;
+    }
+
+    @Override
+    public List<FileEntity> getAllFiles(long userId) {
+        // TODO
+        return null;
+    }
+
+    @Override
+    public List<FolderEntity> getAllFolders(long userId) {
+        // TODO
+        return null;
+    }
+
+    @Override
+    public List<FileEntity> getFiles(long userId, long folderId) {
+        // TODO
+        return null;
+    }
+
+    @Override
+    public List<FolderEntity> getFolders(long userId, long folderId) {
+        // TODO
+        return null;
     }
 }

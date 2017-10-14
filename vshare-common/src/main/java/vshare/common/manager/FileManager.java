@@ -1,5 +1,10 @@
 package vshare.common.manager;
 
+import vshare.common.entity.FileEntity;
+import vshare.common.entity.FolderEntity;
+
+import java.util.List;
+
 public interface FileManager {
     /**
      * Create folder for user
@@ -58,4 +63,39 @@ public interface FileManager {
      * @return sucess ? true : false
      */
     boolean renameFile(long userId, long fileName, long fileId);
+
+    /**
+     * get all file from user account
+     *
+     * @param userId
+     * @return List file
+     */
+    List<FileEntity> getAllFiles(long userId);
+
+    /**
+     * get all folder from user account
+     *
+     * @param userId
+     * @return all folder from user
+     */
+    List<FolderEntity> getAllFolders(long userId);
+
+    /**
+     * get file from account folder
+     *
+     * @param userId
+     * @param folderId
+     * @return list file
+     */
+    List<FileEntity> getFiles(long userId, long folderId);
+
+    /**
+     * get folder from account folder
+     *
+     * @param userId
+     * @param folderId
+     * @return list folder
+     */
+    List<FolderEntity> getFolders(long userId, long folderId);
+
 }
