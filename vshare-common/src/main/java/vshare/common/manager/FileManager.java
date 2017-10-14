@@ -98,4 +98,26 @@ public interface FileManager {
      */
     List<FolderEntity> getFolders(long userId, long folderId);
 
+    /**
+     * change file privacy for account
+     * 0: private, 1: public
+     *
+     * @param userId
+     * @param fileId
+     * @param privacy
+     * @return success ? true : false
+     */
+    boolean changeFilePrivacy(long userId, long fileId, int privacy);
+
+    /**
+     * change folder privacy for account
+     * 0: private, 1: public
+     *
+     * @param userId
+     * @param folderId
+     * @param privacy
+     * @return success ? true : false
+     */
+    boolean changeFolderPrivacy(long userId, long folderId, int privacy);
+
 }

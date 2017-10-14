@@ -64,5 +64,15 @@ public class BizImpl implements Biz {
         return fileManager.getFolders(userId, folderId);
     }
 
+    @Override
+    public boolean changeFilePrivacy(long userId, long fileId, int privacy) {
+        return fileManager.changeFilePrivacy(userId, fileId, privacy);
+    }
+
+    @Override
+    public boolean changeFolderPrivacy(long userId, long folderId, int privacy) {
+        return fileManager.changeFolderPrivacy(userId, folderId, privacy);
+    }
+
 
 }

@@ -66,4 +66,16 @@ public class FileManagerImpl implements FileManager {
         // TODO
         return null;
     }
+
+    @Override
+    public boolean changeFilePrivacy(long userId, long fileId, int privacy) {
+        // TODO
+        return false;
+    }
+
+    @Override
+    public boolean changeFolderPrivacy(long userId, long folderId, int privacy) {
+        // TODO
+        return false;
+    }
 }
