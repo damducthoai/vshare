@@ -4,7 +4,13 @@ import vshare.common.manager.FileManager;
 
 public class FileManagerImpl implements FileManager {
     @Override
-    public boolean createFolder(long userId, String name, long parent) {
+    public boolean createFolder(long userId, String folderName, long folderParentId) {
+        // TODO
+        return false;
+    }
+
+    @Override
+    public boolean deleteFolder(long userId, long folderId) {
         // TODO
         return false;
     }
