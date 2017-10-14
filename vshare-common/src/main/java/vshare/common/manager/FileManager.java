@@ -19,4 +19,13 @@ public interface FileManager {
      * @return success? true : false
      */
     boolean deleteFolder(long userId, long folderId);
+
+    /**
+     * Rename folder from user account
+     *
+     * @param userId
+     * @param folderId
+     * @return
+     */
+    boolean renameFolder(long userId, long folderId);
 }

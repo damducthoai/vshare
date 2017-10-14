@@ -14,4 +14,10 @@ public class FileManagerImpl implements FileManager {
         // TODO
         return false;
     }
+
+    @Override
+    public boolean renameFolder(long userId, long folderId) {
+        // TODO
+        return false;
+    }
 }
