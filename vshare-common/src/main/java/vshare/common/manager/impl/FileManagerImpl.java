@@ -20,4 +20,22 @@ public class FileManagerImpl implements FileManager {
         // TODO
         return false;
     }
+
+    @Override
+    public boolean createFile(long userId, String fileName, long fileId) {
+        // TODO
+        return false;
+    }
+
+    @Override
+    public boolean deleteFile(long userId, long fileId) {
+        // TODO
+        return false;
+    }
+
+    @Override
+    public boolean renameFile(long userId, long fileName, long fileId) {
+        // TODO
+        return false;
+    }
 }
